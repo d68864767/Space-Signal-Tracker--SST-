@@ -1,0 +1,31 @@
+# Space Signal Tracker (SST) Documentation
+
+## 1. Concept Overview
+The Space Signal Tracker (SST) is designed to detect and track a variety of space-based signals for educational and amateur astronomical research. It has the capability to pick up a range of frequencies commonly used by satellites and space probes. It incorporates a motorized system to adjust the antenna's direction for optimal signal reception and a digital system to process and display the received signals.
+
+## 2. KiCAD Design Elements
+### Schematic Design
+- RF (Radio Frequency) Reception Circuit: This circuit is designed to receive various space signals. The schematic for this circuit can be found in the file `RF_Reception_Circuit.sch`.
+- Motor Control Circuit: This circuit is used for moving the antenna to track the source of the signal. The schematic for this circuit can be found in the file `Motor_Control_Circuit.sch`.
+- Data Processing Unit: This circuit is used for converting RF signals to digital data. The schematic for this circuit can be found in the file `Data_Processing_Unit.sch`.
+
+### PCB Design
+The PCB integrates the RF, motor control, and data processing circuits. The design is compact and efficient for easy handling and deployment. The layout for the PCB can be found in the file `SST_PCB_Layout.kicad_pcb`.
+
+### Custom Components and Libraries
+Custom symbols and footprints in KiCAD for any unique components like specialized RF modules or antenna connectors are created. These can be found in the file `Custom_Components.lib`.
+
+## 3. Simulation and Testing
+KiCAD is utilized for electrical simulation to ensure circuit functionality. External testing for RF reception quality and motor control precision is planned. The simulation and testing script can be found in the file `Testing_Simulation.py`.
+
+## 4. Firmware
+The firmware for the motor control and data processing units are written in C. The motor control firmware can be found in the file `Motor_Control_Firmware.c` and the data processing firmware can be found in the file `Data_Processing_Firmware.c`.
+
+## 5. Challenges and Considerations
+Designing for minimal signal interference and maximum reception quality is a challenge. Balancing the power requirements for the RF modules and motor system is also a consideration. User safety and equipment durability, especially if the device is intended for outdoor use, are also important considerations.
+
+## 6. Potential Applications
+The SST can be used for amateur astronomy and satellite tracking. It can also be used for educational purposes in schools and universities for students to learn about radio astronomy and signal processing.
+
+## 7. Final Steps
+After completing the design in KiCAD, the next step would be assembling and testing a prototype. Calibration and fine-tuning of the signal detection and tracking system would be essential. Once fully functional, the Space Signal Tracker could serve as an engaging educational tool or a hobbyist's device for exploring the wonders of space communication.
